@@ -181,7 +181,7 @@ class _HomeNavState extends State<HomeNav> {
           color: Colors.white, borderRadius: BorderRadius.circular(23)),
       child: TextField(
         cursorColor: Theme.of(context).primaryColor,
-        style: Theme.of(context).textTheme.bodyText1,
+        style: TextStyle(color: Theme.of(context).accentColor),
         decoration: InputDecoration(
           border: InputBorder.none,
           hintText: 'What Are You Looking For?',

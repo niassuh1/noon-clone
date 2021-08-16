@@ -10,12 +10,14 @@ class ThemeToggle extends StatelessWidget {
     final _provider = Provider.of<ThemeProvider>(context);
     return Scaffold(
       body: Center(
-          child: Switch.adaptive(
-              value: _provider.isLightTheme(),
-              onChanged: (value) {
-                Provider.of<ThemeProvider>(context, listen: false)
-                    .toggleTheme(value);
-              })),
+        child: Switch.adaptive(
+          value: _provider.isLightTheme(),
+          onChanged: (value) {
+            Provider.of<ThemeProvider>(context, listen: false)
+                .toggleTheme(value);
+          },
+        ),
+      ),
     );
   }
 }
